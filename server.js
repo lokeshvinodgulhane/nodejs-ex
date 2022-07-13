@@ -111,8 +111,8 @@ app.get('/pagecount', function (req, res) {
 
 app.get('/hello?name=/', function(request, response) {
     // userId is a parameter in the url request
-    response.writeHead(200); // return 200 HTTP OK status
-    response.end('{ name:' + request.route.query.name+'}');
+    //response.writeHead(200); // return 200 HTTP OK status
+    response.send('{ name:' + request.route.query.name+'}');
 });
 
 // error handling
